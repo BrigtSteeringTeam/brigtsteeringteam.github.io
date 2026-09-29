@@ -300,7 +300,7 @@ const FAQ = [
 /* ============ AKHIR KONFIGURASI ============ */
 
 const $ = s => document.querySelector(s);
-const bgOf = o => (o.image ? `url("${o.image}"),` : "") + `linear-gradient(135deg,${o.tone[0]},${o.tone[1]})`;
+const bgOf = o => (o.image ? `url('${o.image}'),` : "") + `linear-gradient(135deg,${o.tone[0]},${o.tone[1]})`;
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const urlOf = c => (c && c.link) || REGISTER_URL;
 
